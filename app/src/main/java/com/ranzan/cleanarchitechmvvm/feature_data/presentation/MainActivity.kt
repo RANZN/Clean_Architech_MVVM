@@ -1,7 +1,8 @@
-package com.ranzan.cleanarchitechmvvm
+package com.ranzan.cleanarchitechmvvm.feature_data.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ranzan.cleanarchitechmvvm.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
