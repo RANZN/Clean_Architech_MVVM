@@ -1,5 +1,6 @@
-package com.ranzan.cleanarchitechmvvm.feature_data.presentation.notes
+package com.ranzan.cleanarchitechmvvm.feature_data.presentation
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ranzan.cleanarchitechmvvm.feature_data.domain.model.Note
@@ -13,5 +14,15 @@ class NotesViewModel(private val noteUseCases: NoteUseCases) : ViewModel() {
         }
     }
 
+
+    fun getNote(): LiveData<List<Note>> {
+        return noteUseCases.getNotes.invoke()
+    }
+
+    fun deleteNote(note: Note) {
+        viewModelScope.launch {
+            noteUseCases.deleteNote.invoke(note)
+        }
+    }
 
 }

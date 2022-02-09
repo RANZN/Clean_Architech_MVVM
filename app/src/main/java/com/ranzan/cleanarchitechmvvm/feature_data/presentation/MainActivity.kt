@@ -1,10 +1,11 @@
 package com.ranzan.cleanarchitechmvvm.feature_data.presentation
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import com.ranzan.cleanarchitechmvvm.R
 import com.ranzan.cleanarchitechmvvm.feature_data.domain.model.Note
-import com.ranzan.cleanarchitechmvvm.feature_data.presentation.notes.NotesViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -14,14 +15,25 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        btn.setOnClickListener {
-            val note = Note(
-                "abcd",
-                "content",
-                202930392,
-                12
-            )
+
+        val note = Note(
+            "abcd",
+            "content",
+        )
+
+        addBtn.setOnClickListener {
             viewModel.addData(note)
         }
+
+        getNoteBtn.setOnClickListener {
+            viewModel.getNote().observe(this, Observer {
+                Log.d("ranzn", "onCreate: $it")
+            })
+        }
+
+        deleteBtn.setOnClickListener {
+            viewModel.deleteNote(note)
+        }
+
     }
 }
