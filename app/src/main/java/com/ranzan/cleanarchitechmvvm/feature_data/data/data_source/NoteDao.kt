@@ -13,7 +13,7 @@ interface NoteDao {
     @Query("select * from Note where id=:id")
     suspend fun getNoteById(id: Int): Note?
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertNote(note: Note)
 
     @Delete
