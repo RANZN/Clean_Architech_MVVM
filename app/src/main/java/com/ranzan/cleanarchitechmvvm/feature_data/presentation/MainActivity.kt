@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         val note = Note(
             "abcd",
             "content",
+            1,
+//            2
         )
 
         addBtn.setOnClickListener {

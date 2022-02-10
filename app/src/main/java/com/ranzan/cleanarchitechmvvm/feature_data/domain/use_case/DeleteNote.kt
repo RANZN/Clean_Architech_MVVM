@@ -6,7 +6,7 @@ import com.ranzan.cleanarchitechmvvm.feature_data.domain.repository.NoteReposito
 class DeleteNote(
     private val repository: NoteRepository
 ) {
-    suspend operator fun invoke(note: Note){
+    suspend fun abcd(note: Note){
         repository.deleteNote(note)
     }
 }

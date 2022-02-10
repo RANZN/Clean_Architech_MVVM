@@ -15,4 +15,5 @@ val appModule = module {
     factory { DeleteNote(get()) }
     factory { GetNotes(get()) }
     factory { AddNote(get()) }
+
 }

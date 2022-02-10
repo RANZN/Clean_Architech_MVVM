@@ -6,8 +6,9 @@ import androidx.lifecycle.viewModelScope
 import com.ranzan.cleanarchitechmvvm.feature_data.domain.model.Note
 import com.ranzan.cleanarchitechmvvm.feature_data.domain.use_case.NoteUseCases
 import kotlinx.coroutines.launch
+import org.koin.core.component.KoinComponent
 
-class NotesViewModel(private val noteUseCases: NoteUseCases) : ViewModel() {
+class NotesViewModel(private val noteUseCases: NoteUseCases) : ViewModel(),KoinComponent {
     fun addData(note: Note) {
         viewModelScope.launch {
             noteUseCases.addNote.invoke(note)
@@ -21,7 +22,7 @@ class NotesViewModel(private val noteUseCases: NoteUseCases) : ViewModel() {
 
     fun deleteNote(note: Note) {
         viewModelScope.launch {
-            noteUseCases.deleteNote.invoke(note)
+            noteUseCases.deleteNote.abcd(note)
         }
     }
 
