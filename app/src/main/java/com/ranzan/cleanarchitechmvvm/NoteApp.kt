@@ -7,6 +7,9 @@ import com.ranzan.cleanarchitechmvvm.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.GlobalContext.startKoin
 
+/**
+ * Application Level File to apply koin.
+ */
 class NoteApp:Application() {
 
     override fun onCreate() {

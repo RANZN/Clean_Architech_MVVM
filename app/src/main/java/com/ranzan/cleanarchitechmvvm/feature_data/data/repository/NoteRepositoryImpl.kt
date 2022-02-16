@@ -5,6 +5,9 @@ import com.ranzan.cleanarchitechmvvm.feature_data.data.data_source.NoteDao
 import com.ranzan.cleanarchitechmvvm.feature_data.domain.model.Note
 import com.ranzan.cleanarchitechmvvm.feature_data.domain.repository.NoteRepository
 
+/**
+ * implement the interface here and define all logics here
+ */
 class NoteRepositoryImpl(
     private val noteDao: NoteDao
 ) : NoteRepository {

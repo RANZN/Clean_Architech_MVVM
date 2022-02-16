@@ -15,7 +15,6 @@ class NotesViewModel(private val noteUseCases: NoteUseCases) : ViewModel(),KoinC
         }
     }
 
-
     fun getNote(): LiveData<List<Note>> {
         return noteUseCases.getNotes.invoke()
     }

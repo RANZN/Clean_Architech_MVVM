@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "308285975395",
+    "project_id": "clean-architech-mvvm",
+    "storage_bucket": "clean-architech-mvvm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308285975395:android:5941f2a232d44ecf790156",
+        "android_client_info": {
+          "package_name": "com.ranzan.cleanarchitechmvvm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308285975395-vofml8fvgq1q9bgp0l88vn2j5mkl85g3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo1P5HBC50a8H_QHD4k56EIa3_7iPMHJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308285975395-vofml8fvgq1q9bgp0l88vn2j5mkl85g3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
