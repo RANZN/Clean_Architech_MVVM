@@ -9,8 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import com.ranzan.cleanarchitechmvvm.R
 import com.ranzan.cleanarchitechmvvm.feature_data.domain.model.Note
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.deleteBtn
+import kotlinx.android.synthetic.main.activity_main.base64image
 import kotlinx.android.synthetic.main.fragment_blank.*
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
@@ -45,7 +44,7 @@ class NoteFragment : Fragment() {
             })
         }
 
-        deleteBtn.setOnClickListener {
+        base64image.setOnClickListener {
             viewModel.deleteNote(note)
         }
 
