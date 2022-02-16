@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_main.deleteBtn
 import kotlinx.android.synthetic.main.fragment_blank.*
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
-class BlankFragment : Fragment() {
+class NoteFragment : Fragment() {
 
     private val viewModel by sharedViewModel<NotesViewModel>()
     override fun onCreateView(

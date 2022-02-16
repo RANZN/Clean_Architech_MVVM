@@ -14,6 +14,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+        /**
+         * Crashlytics:
+         *  Whenever an application crashes it tells at realtime for how many user it has crashed
+         *  and also log about the crash.
+         */
+
+        //on button click crash the application.
         crashBtn.setOnClickListener {
             // Creates a button that mimics a crash when pressed
 
@@ -21,9 +28,10 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        noteFrag.setOnClickListener {
 
-            supportFragmentManager.beginTransaction().add(R.id.fragmentContainer, BlankFragment()).commit()
+        //adding data to room database on the new fragment.
+        noteFrag.setOnClickListener {
+            supportFragmentManager.beginTransaction().add(R.id.fragmentContainer, NoteFragment()).commit()
         }
 
     }
