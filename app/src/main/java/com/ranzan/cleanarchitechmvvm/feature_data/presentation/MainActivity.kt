@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         noteFrag.setOnClickListener {
+
             supportFragmentManager.beginTransaction().add(R.id.fragmentContainer, BlankFragment()).commit()
         }
 
