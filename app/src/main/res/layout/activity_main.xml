@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".feature_data.presentation.MainActivity">
+    tools:context=".feature_data.presentation.activity.MainActivity">
 
     <LinearLayout
         android:id="@+id/btns"
         android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent">

@@ -1,6 +1,6 @@
 package com.ranzan.cleanarchitechmvvm.di
 
-import com.ranzan.cleanarchitechmvvm.feature_data.presentation.NotesViewModel
+import com.ranzan.cleanarchitechmvvm.feature_data.presentation.fragment.NotesViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

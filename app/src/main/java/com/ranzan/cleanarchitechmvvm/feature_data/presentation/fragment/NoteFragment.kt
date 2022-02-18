@@ -1,4 +1,4 @@
-package com.ranzan.cleanarchitechmvvm.feature_data.presentation
+package com.ranzan.cleanarchitechmvvm.feature_data.presentation.fragment
 
 import android.os.Bundle
 import android.util.Log
